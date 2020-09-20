@@ -12,7 +12,7 @@ import dev.lst.cc.sre.registry.ProviderRegistryItem;
  */
 public enum RandomLBStrategy implements LBStrategy {
     INSTANCE;
-    Random random = new Random();
+    private Random random = new Random();
     private ProviderRegistry registry = ProviderRegistry.INSTANCE;
 
     @Override

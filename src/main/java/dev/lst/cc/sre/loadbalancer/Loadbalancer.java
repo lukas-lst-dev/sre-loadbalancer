@@ -12,7 +12,7 @@ public class Loadbalancer {
 
     private final LBStrategy lbStrategy;
 
-    ProviderRegistry registry = ProviderRegistry.INSTANCE;
+    private ProviderRegistry registry = ProviderRegistry.INSTANCE;
 
     public Loadbalancer(LBStrategy lbStrategy) {
         this.lbStrategy = lbStrategy;
